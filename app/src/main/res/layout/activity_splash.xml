@@ -10,7 +10,7 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="220dp"
-        android:layout_height="451dp"
-        app:srcCompat="@drawable/logo_esteso" />
+        android:layout_width="381dp"
+        android:layout_height="618dp"
+        app:srcCompat="@drawable/sfondo" />
 </LinearLayout>
