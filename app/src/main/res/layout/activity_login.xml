@@ -10,10 +10,10 @@
 
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="295dp"
-        android:layout_height="114dp"
-        app:srcCompat="@drawable/logo_esteso" />
+        android:id="@+id/logo"
+        android:layout_width="73dp"
+        android:layout_height="270dp"
+        app:srcCompat="@drawable/logo_m" />
 
     <TextView
         android:id="@+id/textView"
@@ -30,6 +30,7 @@
         android:backgroundTint="#1000ff"
         android:ems="10"
         android:inputType="textEmailAddress"
+        android:gravity="center"
         android:textColor="#c2c2c2" />
 
     <TextView
@@ -47,6 +48,7 @@
         android:backgroundTint="#1000ff"
         android:ems="10"
         android:inputType="textPassword"
+        android:gravity="center"
         android:textColor="#c2c2c2" />
 
     <Button
