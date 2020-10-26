@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "125347899663",
+    "firebase_url": "https://matesin-9a8d3.firebaseio.com",
+    "project_id": "matesin-9a8d3",
+    "storage_bucket": "matesin-9a8d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:125347899663:android:c50cd4492ff0bcee5f767a",
+        "android_client_info": {
+          "package_name": "com.example.mymatesin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "125347899663-sqrs79fmaerrrg4nrb5nkmn7bkpvidei.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAY7YiUzFWOw4jzY3V9eucd7Yys-JuJXW4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "125347899663-sqrs79fmaerrrg4nrb5nkmn7bkpvidei.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,14 +1,22 @@
 package com.example.mymatesin
 
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.motion.widget.TransitionBuilder.validate
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
+import com.google.firebase.ktx.Firebase
 
 
 class UserRegistration : AppCompatActivity() {
+    private var firebaseAuth: FirebaseAuth? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_userregistration)
@@ -22,17 +30,17 @@ class UserRegistration : AppCompatActivity() {
         var cognome = findViewById<EditText>(R.id.Cognome)
         var email = findViewById<EditText>(R.id.Mail)
 
-        registerbutton.setOnClickListener {
-            if ((nome.length() == 0) || (cognome.length() == 0) || (email.length() == 0) || (numero.length() == 0) || (password.length() == 0))
-                Toast.makeText(applicationContext, "Non sono stati compilati tutti i campi", Toast.LENGTH_LONG).show()
-             else if (numero.length() != 10)
-                Toast.makeText(applicationContext, "Numero di telefono non valido", Toast.LENGTH_LONG).show()
-              else if (password.length() < 8)
-                Toast.makeText(applicationContext, "La password deve contenere almeno 8 caratteri", Toast.LENGTH_LONG).show()
-                else Toast.makeText(applicationContext, "Registrazione effettuata con Successo! Torna al Login", Toast.LENGTH_LONG).show()
+        firebaseAuth = FirebaseAuth.getInstance()
+
+        @Override
+        fun onStart(){
+            super.onStart()
+            var currentUser : FirebaseUser? = firebaseAuth!!.currentUser
+
+
         }
+
+
     }
-
-
 }
 
