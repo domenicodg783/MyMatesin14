@@ -1,5 +1,4 @@
 @file:Suppress("DEPRECATION")
-
 package com.example.mymatesin
 
 import android.content.Intent
