@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".LoginActivity">
 
 
     <ImageView
@@ -23,7 +23,7 @@
         android:text="E-mail" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/input_email"
         android:layout_width="247dp"
         android:layout_height="36dp"
         android:background="@drawable/edittext"
@@ -41,7 +41,7 @@
         android:text="Password" />
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
+        android:id="@+id/input_password"
         android:layout_width="247dp"
         android:layout_height="36dp"
         android:background="@drawable/edittext"
@@ -52,7 +52,7 @@
         android:textColor="#c2c2c2" />
 
     <Button
-        android:id="@+id/login"
+        android:id="@+id/btn_login"
         android:layout_width="144dp"
         android:layout_height="44dp"
         android:backgroundTint="#c2c2c2"
@@ -66,7 +66,7 @@
         android:text="Non sei ancora registrato?" />
 
     <Button
-        android:id="@+id/registrati"
+        android:id="@+id/btn_sign_up"
         android:layout_width="145dp"
         android:layout_height="48dp"
         android:backgroundTint="#c2c2c2"

@@ -1,4 +1,3 @@
-@file:Suppress("DEPRECATION")
 package com.example.mymatesin
 
 import android.content.Intent
@@ -6,7 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 
-class MainActivity : AppCompatActivity() {
+@Suppress("DEPRECATION")
+class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
@@ -14,8 +14,7 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.hide()
 
          Handler().postDelayed({
-            val intent = Intent(this@MainActivity, Login::class.java)
-            startActivity(intent)
+            startActivity(Intent(this@SplashActivity, LoginActivity::class.java))
             finish()
         }, 3000)
     }

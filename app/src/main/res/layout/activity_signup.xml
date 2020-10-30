@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".SignUpActivity">
 
 
     <ImageView
@@ -37,7 +37,7 @@
         android:text="Nome" />
 
     <EditText
-        android:id="@+id/Nome"
+        android:id="@+id/input_nome"
         android:layout_width="358dp"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -54,7 +54,7 @@
         android:text="Cognome" />
 
     <EditText
-        android:id="@+id/Cognome"
+        android:id="@+id/input_cognome"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -71,7 +71,7 @@
         android:text="E-mail" />
 
     <EditText
-        android:id="@+id/Mail"
+        android:id="@+id/input_email"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -87,7 +87,7 @@
         android:text="Telefono" />
 
     <EditText
-        android:id="@+id/NumeroTelefono"
+        android:id="@+id/input_cellulare"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -103,7 +103,7 @@
         android:text="Password" />
 
     <EditText
-        android:id="@+id/Password"
+        android:id="@+id/input_password"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -112,7 +112,7 @@
         android:inputType="textPassword" />
 
     <Button
-        android:id="@+id/confermaregistrazione"
+        android:id="@+id/conferma_sign_up"
         android:layout_width="145dp"
         android:layout_height="48dp"
         android:gravity="center"
